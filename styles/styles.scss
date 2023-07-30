@@ -261,7 +261,7 @@ section {
     .progress-bars {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
+        grid-gap: 3rem;
         .progress-bar {
             display: flex;
             flex-direction: column;
@@ -290,12 +290,12 @@ section {
                         transition: all .4s ease-in-out;
                         width: 60%;
                     }
-                    .html { width: 80%; }
-                    .css { width: 95%; }
-                    .php { width: 40%; }
-                    .mysql{ width: 30%; }
-                    .cpp{ width: 40%; }
-                    .python{ width: 60%; }
+                    .html { width: 100%; }
+                    .css { width: 100%; }
+                    .php { width: 100%; }
+                    .mysql{ width: 100%; }
+                    .cpp{ width: 100%; }
+                    .python{ width: 100%; }
                 }
             }
         }
