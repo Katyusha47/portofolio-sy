@@ -829,4 +829,58 @@ section {
     }
 }
 
+// Hide old progress bars
+.progress-bars {
+    display: none !important;
+}
+
+// Modern Skill Cards
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    .skill-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        background: var(--glass-bg);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid var(--glass-border);
+        border-radius: 15px;
+        transition: var(--transition-default);
+        cursor: pointer;
+        i {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: var(--gradient-purple-pink);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            transition: var(--transition-default);
+        }
+        h5 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--color-white);
+            margin: 0;
+        }
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--box-shadow-hover);
+            background: var(--gradient-primary);
+            i {
+                transform: scale(1.2);
+                filter: drop-shadow(0 0 10px rgba(99, 102, 241, 0.8));
+            }
+            h5 {
+                color: var(--color-white);
+            }
+        }
+    }
+}
+
 @import './media';
