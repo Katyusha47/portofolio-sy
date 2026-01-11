@@ -37,6 +37,25 @@
     }
   }
 
+  // ==================== Internal Links Navigation ====================
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+      if (href === "#") return;
+
+      e.preventDefault();
+      const targetId = href.substring(1);
+
+      // Trigger section navigation if it's a section link
+      const targetControl = document.querySelector(
+        `.control[data-id="${targetId}"]`
+      );
+      if (targetControl) {
+        targetControl.click();
+      }
+    });
+  });
+
   // ==================== Contact Form Handler ====================
   const contactForm = document.getElementById("contact-form");
   const formFeedback = document.getElementById("form-feedback");
