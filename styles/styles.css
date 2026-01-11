@@ -8,8 +8,8 @@
 :root {
   /* Simple Color Palette */
   --color-primary: #0a0e27;
-  --color-secondary: #6366f1;
-  --color-accent: #a855f7;
+  --color-secondary: #DC143C;
+  --color-accent: #8B0000;
   --color-cyan: #06b6d4;
   --color-white: #FFFFFF;
   --color-black: #000;
@@ -28,8 +28,8 @@
 
 .light-mode {
   --color-primary: #f8f9fa;
-  --color-secondary: #6366f1;
-  --color-accent: #a855f7;
+  --color-secondary: #DC143C;
+  --color-accent: #8B0000;
   --color-white: #1a1d29;
   --color-black: #000;
   --color-grey0: #0a0e27;
