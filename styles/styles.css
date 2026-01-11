@@ -5,6 +5,16 @@
   list-style: none;
 }
 
+html {
+  /* Hide scrollbar for all browsers */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
 :root {
   /* Simple Color Palette */
   --color-primary: #000000;
