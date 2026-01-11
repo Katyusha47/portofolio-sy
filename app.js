@@ -20,23 +20,6 @@
     });
   });
 
-  // ==================== Theme Toggle ====================
-  const themeBtn = document.querySelector(".theme-btn");
-  if (themeBtn) {
-    themeBtn.addEventListener("click", () => {
-      document.body.classList.toggle("light-mode");
-      // Save preference to localStorage
-      const isLightMode = document.body.classList.contains("light-mode");
-      localStorage.setItem("theme", isLightMode ? "light" : "dark");
-    });
-
-    // Load saved theme preference
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "light") {
-      document.body.classList.add("light-mode");
-    }
-  }
-
   // ==================== Internal Links Navigation ====================
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {

@@ -28,21 +28,6 @@
     --box-shadow-1: 0 3px 8px rgba(0,0,0,.15);
 }
 
-.light-mode {
-    --color-primary: #f8f9fa;
-    --color-secondary: #DC143C;
-    --color-accent: #8B0000;
-    --color-white: #1a1d29;
-    --color-black: #000;
-    --color-grey0: #0a0e27;
-    --color-grey-1: #495057;
-    --color-grey-2: #6c757d;
-    --color-grey-3: #adb5bd;
-    --color-grey-4: #e9ecef;
-    --color-grey-5: #dee2e6;
-    --color-grey-6: #12151e;
-}
-
 body {
     background-color: var(--color-primary);
     font-family: 'Poppins', sans-serif;
@@ -117,34 +102,6 @@ section {
     .active-btn {
         background: var(--color-secondary);
         i { color: var(--color-white); }
-    }
-}
-
-.theme-btn {
-    top: 5%;
-    right: 3%;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    cursor: pointer;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: var(--box-shadow-1);
-    z-index: 10;
-    transition: transform 0.3s ease;
-    
-    &:active {
-        transform: rotate(180deg);
-    }
-    
-    i{
-        font-size: 1.4rem;
-        color: var(--color-secondary);
-        pointer-events: none;
     }
 }
 
