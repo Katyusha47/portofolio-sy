@@ -414,25 +414,42 @@ section {
   color: var(--color-grey-2);
   text-align: center;
 }
+.contact-content-con .left-contact .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
 .contact-content-con .left-contact .contact-info .contact-item {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 1rem 0;
+  gap: 2rem;
+  min-width: 500px;
 }
 .contact-content-con .left-contact .contact-info .contact-item p {
   margin: 0.3rem 0 !important;
   padding: 0 !important;
 }
 .contact-content-con .left-contact .contact-info .contact-item .icon {
-  display: grid;
-  grid-template-columns: 40px 1fr;
-}
-.contact-content-con .left-contact .contact-info .contact-item .icon i {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  min-width: 150px;
+}
+.contact-content-con .left-contact .contact-info .contact-item .icon i {
   font-size: 1.3rem;
   color: var(--color-secondary);
+}
+.contact-content-con .left-contact .contact-info .contact-item .icon span {
+  font-weight: 500;
+}
+.contact-content-con .left-contact .contact-info .contact-item p {
+  margin: 0 !important;
+  padding: 0 !important;
+  flex: 1;
 }
 .contact-content-con .left-contact .contact-icon {
   display: flex;
