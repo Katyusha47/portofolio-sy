@@ -426,8 +426,8 @@ section {
   align-items: center;
   justify-content: flex-start;
   padding: 1rem 0;
-  gap: 2rem;
-  min-width: 500px;
+  gap: 1rem;
+  min-width: 600px;
 }
 .contact-content-con .left-contact .contact-info .contact-item p {
   margin: 0.3rem 0 !important;
@@ -437,14 +437,16 @@ section {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  min-width: 150px;
+  min-width: 180px;
 }
 .contact-content-con .left-contact .contact-info .contact-item .icon i {
   font-size: 1.3rem;
   color: var(--color-secondary);
+  width: 30px;
 }
 .contact-content-con .left-contact .contact-info .contact-item .icon span {
   font-weight: 500;
+  flex: 1;
 }
 .contact-content-con .left-contact .contact-info .contact-item p {
   margin: 0 !important;
