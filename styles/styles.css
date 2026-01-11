@@ -32,6 +32,13 @@ body {
   font-size: 1.1rem;
   color: var(--color-white);
   overflow-x: hidden;
+  /* Hide scrollbar for all browsers */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 a {
