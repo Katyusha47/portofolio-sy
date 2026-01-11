@@ -629,6 +629,12 @@ section {
   margin-bottom: 1rem;
   color: var(--color-accent);
 }
+.skills-container .skill-card .skill-text-icon {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Courier New", monospace;
+  font-style: normal;
+}
 .skills-container .skill-card h5 {
   font-size: 1.1rem;
   font-weight: 600;
