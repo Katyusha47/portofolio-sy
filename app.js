@@ -2,39 +2,18 @@
 (function () {
   "use strict";
 
-  // ==================== Navigation Controls ====================
-  const controls = document.querySelectorAll(".control");
-  const sections = document.querySelectorAll(".container");
-
-  controls.forEach((button) => {
-    button.addEventListener("click", function () {
-      const activeBtn = document.querySelector(".active-btn");
-      const activeSection = document.querySelector(".active");
-
-      if (activeBtn) activeBtn.classList.remove("active-btn");
-      if (activeSection) activeSection.classList.remove("active");
-
-      this.classList.add("active-btn");
-      const targetSection = document.getElementById(button.dataset.id);
-      if (targetSection) targetSection.classList.add("active");
-    });
-  });
-
-  // ==================== Internal Links Navigation ====================
+  // ==================== Smooth Scroll for Internal Links ====================
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
-      const href = this.getAttribute("href");
-      if (href === "#") return;
-
       e.preventDefault();
-      const targetId = href.substring(1);
+      const targetId = this.getAttribute("href").substring(1);
+      const targetSection = document.getElementById(targetId);
 
-      // Trigger section navigation if it's a section link
-      const targetControl = document.querySelector(
-        `.control[data-id="${targetId}"]`
-      );
-      if (targetControl) {
-        targetControl.click();
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
       }
     });
   });
@@ -82,7 +61,7 @@
       setTimeout(() => {
         showFormMessage(
           "Thank you! Your message has been sent successfully. I will get back to you soon!",
-          "success"
+          "success",
         );
         contactForm.reset();
         submitBtn.querySelector(".btn-text").textContent = originalBtnText;

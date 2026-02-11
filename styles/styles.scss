@@ -72,54 +72,45 @@ header {
 section {
     min-height: 100vh;
     width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
+    position: relative;
     padding: 3rem 18rem;
 }
 
 .container {
-    display: none;
     background-color: var(--color-primary);
 }
 
-.active {
-    display: block;
-}
+/* Controls removed - Single Page Layout */
 
-/* Controls */
-.controls {
-    position: fixed;
-    z-index: 10;
-    top: 50%;
+.theme-btn {
+    top: 5%;
     right: 3%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    cursor: pointer;
+    position: fixed;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    transform: translateY(-50%);
-    .control{
-        padding: 1rem;
-        cursor: pointer;
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        width: 55px;
-        height: 55px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: .7rem 0;
-        box-shadow: var(--box-shadow-1);
-        i {
-            font-size: 1.2rem;
-            color: var(--color-grey-2);
-            pointer-events: none;
-        }
+    align-items: center;
+    box-shadow: var(--box-shadow-1);
+    transition: var(--transition-default);
+    z-index: 10;
+    
+    &:hover {
+        transform: translateY(-3px) rotate(180deg);
+        box-shadow: var(--box-shadow-hover);
     }
-    .active-btn {
-        background: var(--color-secondary);
-        i { color: var(--color-white); }
+    &:active{ transform: translateY(-1px) rotate(180deg); }
+    i{
+        font-size: 1.4rem;
+        color: var(--color-secondary);
+        pointer-events: none;
+        transition: var(--transition-default);
     }
 }
 
