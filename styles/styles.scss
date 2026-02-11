@@ -331,7 +331,7 @@ section {
             background: rgba(220, 20, 60, 0.95);
             padding: 2rem;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             flex-direction: column;
             flex-grow: 1;
@@ -368,7 +368,7 @@ section {
                 justify-content: center;
                 align-items: center;
                 gap: 1rem;
-                margin-top: 1rem;
+                margin-top: auto;
                 .icon {
                     background-color: var(--color-white);
                     border-radius: 50%;
