@@ -120,6 +120,7 @@ section {
 .header-content .left-header {
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
 }
 .header-content .left-header .h-shape {
