@@ -198,13 +198,13 @@ section {
   .header-content .left-header img {
     max-width: 100%;
     height: auto;
-    width: 400px;
+    width: 500px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .header-content .left-header img {
-    width: 300px;
+    width: 400px;
     max-width: 100%;
     height: auto;
   }
@@ -212,7 +212,7 @@ section {
 
 @media screen and (max-width: 480px) {
   .header-content .left-header img {
-    width: 200px;
+    width: 300px;
     max-width: 100%;
     height: auto;
   }
