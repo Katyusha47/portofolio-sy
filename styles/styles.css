@@ -169,7 +169,8 @@ section {
 
 @media screen and (max-width: 768px) {
   .header-content {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
     min-height: auto;
     padding: 2rem 0;
   }
@@ -204,7 +205,7 @@ section {
 
 @media screen and (max-width: 768px) {
   .header-content .left-header img {
-    width: 400px;
+    width: 450px;
     max-width: 100%;
     height: auto;
   }
@@ -212,7 +213,7 @@ section {
 
 @media screen and (max-width: 480px) {
   .header-content .left-header img {
-    width: 300px;
+    width: 350px;
     max-width: 100%;
     height: auto;
   }
